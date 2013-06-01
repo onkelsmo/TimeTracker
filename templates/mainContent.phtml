@@ -1,0 +1,34 @@
+<?php 
+use timeTracker\Timer;
+
+$a = new Timer();
+?>
+<p>
+	<!-- <form method="post"> -->
+		<button name="btn01" value="" onclick="valueChanger()">Start</button>
+	<!-- </form> -->
+	<?php
+		if (isset($_POST['btn01']) && $_POST['btn01'] == 'start')
+		{
+			$a->start();
+			dump($a);
+		}
+		elseif (isset($_POST['btn01']) && $_POST['btn01'] == 'stop')
+		{
+			$a->stop();
+			dump($a);
+		}
+	?>
+	<div class="output">
+		<?php
+			if (is_object($a))
+			{
+				echo $a->getTimeDifference();
+			}
+			else 
+			{
+				echo "0";
+			}
+		?>
+	</div>
+</p>

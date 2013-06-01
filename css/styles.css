@@ -4,3 +4,10 @@
 	padding: 0;
 	margin: 0;
 }
+
+.output
+{
+	border: 1px solid #DDDDDD;
+	width: 80px;
+	height: 20px;
+}

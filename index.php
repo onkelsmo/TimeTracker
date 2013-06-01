@@ -11,21 +11,10 @@ namespace timeTracker;
 
 include 'includes/includes.php';
 
-/*
-$a = new Timer();
 
-sleep(2);
 
-$a->stop();
-
-$a->calculateDifference();
-
-dump($a);
-*/
 TemplateLoader::load('header');
-
-
-
+TemplateLoader::load('mainContent');
 TemplateLoader::load('footer');
 
 

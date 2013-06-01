@@ -15,10 +15,10 @@ final class TemplateLoader
 	public static function load($tpl)
 	{
 		// TODO: Does the File exists?
+		
 		$filename = "templates/".$tpl.".phtml";
 		
-		$content = file_get_contents($filename);
-		echo $content;
+		include $filename;
 	}
 }
 ?>

@@ -56,11 +56,19 @@ class Timer
 	// Constructor
 	public function __construct()
 	{
+		
+	}
+	
+	// Methods
+	/**
+	 * start - sets $startTime to the actual time
+	 */
+	public function start()
+	{
 		$actualTime = time();
 		$this->setStartTime($actualTime);
 	}
 	
-	// Methods
 	/**
 	 * stop - sets $endTime to the actual time
 	 */
