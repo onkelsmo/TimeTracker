@@ -1,7 +1,6 @@
 <?php 
 use timeTracker\Timer;
 
-$a = new Timer();
 ?>
 <p>
 	<!-- <form method="post"> -->
@@ -10,20 +9,20 @@ $a = new Timer();
 	<?php
 		if (isset($_POST['btn01']) && $_POST['btn01'] == 'start')
 		{
-			$a->start();
-			dump($a);
+			$timer->start();
+			dump($timer);
 		}
-		elseif (isset($_POST['btn01']) && $_POST['btn01'] == 'stop')
+		else if (isset($_POST['btn01']) && $_POST['btn01'] == 'stop')
 		{
-			$a->stop();
-			dump($a);
+			$timer->stop();
+			dump($timer);
 		}
 	?>
 	<div class="output">
 		<?php
-			if (is_object($a))
+			if (is_object($timer))
 			{
-				echo $a->getTimeDifference();
+				echo $timer->getTimeDifference();
 			}
 			else 
 			{

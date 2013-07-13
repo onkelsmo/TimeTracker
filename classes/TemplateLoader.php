@@ -12,7 +12,7 @@ namespace timeTracker;
 final class TemplateLoader
 {
 	// Methods
-	public static function load($tpl)
+	public static function load($tpl, Timer $timer = null)
 	{
 		// TODO: Does the File exists?
 		

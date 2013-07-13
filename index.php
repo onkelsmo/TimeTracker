@@ -11,10 +11,10 @@ namespace timeTracker;
 
 include 'includes/includes.php';
 
-
+$timer = new Timer();
 
 TemplateLoader::load('header');
-TemplateLoader::load('mainContent');
+TemplateLoader::load('mainContent', $timer);
 TemplateLoader::load('footer');
 
 
