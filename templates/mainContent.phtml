@@ -2,11 +2,10 @@
 use timeTracker\Timer;
 
 ?>
-<p>
-	<!-- <form method="post"> -->
+<body>
+	<p>
 		<button name="btn01" value="" onclick="valueChanger()">Start</button>
-	<!-- </form> -->
-	<?php
+		<?php
 		if (isset($_POST['btn01']) && $_POST['btn01'] == 'start')
 		{
 			$timer->start();
@@ -17,8 +16,8 @@ use timeTracker\Timer;
 			$timer->stop();
 			dump($timer);
 		}
-	?>
-	<div class="output">
+		?>
+		<div class="output">
 		<?php
 			if (is_object($timer))
 			{
@@ -29,5 +28,6 @@ use timeTracker\Timer;
 				echo "0";
 			}
 		?>
-	</div>
-</p>
+		</div>
+	</p>
+</body>

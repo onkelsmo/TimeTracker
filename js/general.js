@@ -2,7 +2,7 @@ function valueChanger()
 {
     if ($('button').html() == 'Start')
     {
-        var post = $.post('index.php', { btn01: "start"});
+        var post = $.post('#', { btn01: "start"});
     
         post.done(function( data )
         {
@@ -13,7 +13,7 @@ function valueChanger()
     }
     else
     {
-        var post = $.post('index.php', { btn01: "stop"});
+        var post = $.post('#', { btn01: "stop"});
     
         post.done(function( data )
         {
