@@ -16,7 +16,4 @@ $timer = new Timer();
 TemplateLoader::load('header');
 TemplateLoader::load('mainContent', $timer);
 TemplateLoader::load('footer');
-
-
-
 ?>

@@ -17,4 +17,6 @@ include 'includes/freaky_functions.php';
 // Classes
 include 'classes/Timer.php';
 include 'classes/TemplateLoader.php';
+
+//include 'postHandler.php';
 ?>

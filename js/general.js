@@ -2,22 +2,24 @@ function valueChanger()
 {
     if ($('button').html() == 'Start')
     {
-        var post = $.post('#', { btn01: "start"});
+        var post = $.post('postHandler.php', { btn01: "start"});
     
         post.done(function( data )
         {
-            $('body').empty().html(data);
+            //$('body').empty().html(data);
+            $('.output').html(data);
         
             $('button').html('Stop');
         });    
     }
     else
     {
-        var post = $.post('#', { btn01: "stop"});
+        var post = $.post('postHandler.php', { btn01: "stop"});
     
         post.done(function( data )
         {
-            $('body').empty().html(data);
+            //$('body').empty().html(data);
+            $('.output').html(data);
         
             $('button').html('Start');
         }); 
